@@ -9,7 +9,7 @@
     "not_found_handling": "single-page-application",
   },
   "vars": {
-    "CONVEX_SITE_URL": "https://convex.portgeochristmascruise.com.au/",
+    "CONVEX_SITE_URL": "https://convex.jiuway.com/",
   },
   "observability": {
     "logs": {
@@ -24,7 +24,7 @@
   "env": {
     "dev": {
       "vars": {
-        "CONVEX_SITE_URL": "https://blessed-meadowlark-989.convex.site",
+        "CONVEX_SITE_URL": "https://uncommon-retriever-69.convex.site",
       },
     },
   },

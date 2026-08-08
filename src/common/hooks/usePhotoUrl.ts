@@ -56,7 +56,7 @@ export function usePhotoUrl(
       // Use Cloudflare's URL-based image transformation
       // Format: https://ZONE/cdn-cgi/image/<OPTIONS>/<SOURCE-IMAGE>
       const transformOptions = `width=${width},quality=${q},format=auto,dpr=${dpr},fit=cover`;
-      return `https://portgeochristmascruise.com.au/cdn-cgi/image/${transformOptions}/${photo.uploadState.url}`;
+      return `https://jiuway.com/cdn-cgi/image/${transformOptions}/${photo.uploadState.url}`;
     }
 
     exhaustiveCheck(photo.uploadState);

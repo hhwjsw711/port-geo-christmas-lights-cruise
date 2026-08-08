@@ -11,9 +11,9 @@ export const resend: Resend = new Resend(components.resend, {
 
 export const email = {
   adminFromAddress:
-    "Port Geographic Christmas Cruise Admin <admin@portgeochristmascruise.com.au>",
+    "Port Geographic Christmas Cruise Admin <admin@jiuway.com>",
 
-  replyToAddress: "Anna McRostie <AMcRostie@aigleroyal.com.au>",
+  replyToAddress: "Hu Hongwei <hhwjsw711@gmail.com>",
 
   async sendTestEmail(ctx: MutationCtx, args: { to: string }) {
     await resend.sendEmail(ctx, {
@@ -83,7 +83,7 @@ export const email = {
       html: `
         <h2>Congratulations! Your Entry Has Been Approved</h2>
         <p>We're excited to let you know that your entry for the Port Geographe Christmas Lights Competition has been approved!</p>
-        
+
         <div style="background-color: #f0f9ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <p><strong>Entry Number:</strong> ${args.entryNumber}</p>
           <p><strong>Property Name:</strong> ${args.entry.name}</p>
@@ -102,7 +102,7 @@ export const email = {
         <p><a href="${myEntriesUrl}" style="display: inline-block; padding: 12px 24px; background-color: #16a34a; color: white; text-decoration: none; border-radius: 5px; margin: 20px 0;">View Your Entry</a></p>
 
         <p>Thank you for being part of the Port Geographe Christmas Lights Cruise! Your participation helps create a magical experience for our community.</p>
-        
+
         <p style="color: #666; font-size: 14px; margin-top: 30px;">If you have any questions, please don't hesitate to reach out to us.</p>
       `,
     });
@@ -123,7 +123,7 @@ export const email = {
       html: `
         <h2>Update on Your Entry Application</h2>
         <p>Thank you for your interest in participating in the Port Geographe Christmas Lights Cruise.</p>
-        
+
         <p>Unfortunately, we are unable to approve your entry at this time.</p>
 
       <div style="background-color: #fef2f2; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ef4444;">
@@ -138,7 +138,7 @@ export const email = {
         <p><a href="${myEntriesUrl}" style="display: inline-block; padding: 12px 24px; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 5px; margin: 20px 0;">View Your Entries</a></p>
 
         <p>We appreciate your understanding and hope you'll consider participating in future events.</p>
-        
+
         <p style="color: #666; font-size: 14px; margin-top: 30px;">For any questions or concerns, please reply to this email</p>
       `,
     });
