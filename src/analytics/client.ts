@@ -85,8 +85,8 @@ export async function initAnalytics() {
                 token: env.VITE_POSTHOG_KEY,
                 // Preview and local smoke tests must not inflate public reports.
                 environment: [
-                  "portgeochristmascruise.com.au",
-                  "www.portgeochristmascruise.com.au",
+                  "jiuway.com",
+                  "www.jiuway.com",
                 ].includes(location.hostname)
                   ? "production"
                   : "test",

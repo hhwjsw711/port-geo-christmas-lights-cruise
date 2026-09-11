@@ -189,10 +189,10 @@ describe("analytics lifecycle", () => {
       properties: { environment: "production" },
     };
     expect(send(event).properties.environment).toBe("test");
-    vi.stubGlobal("location", { hostname: "portgeochristmascruise.com.au" });
+    vi.stubGlobal("location", { hostname: "jiuway.com" });
     expect(send(event).properties.environment).toBe("production");
     vi.stubGlobal("location", {
-      hostname: "portgeochristmascruise.com.au.example.com",
+      hostname: "jiuway.com.example.com",
     });
     expect(send(event).properties.environment).toBe("test");
   });
